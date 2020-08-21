@@ -1,0 +1,131 @@
+html {
+  font-size: 15px;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.text__right {
+  text-align: right;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url('img/mostly_sunny_skies.jpg') no-repeat center / cover;
+  position: relative;
+}
+
+.main__wrapper {
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main__content {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 15px;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  max-width: 300px;
+  width: 100%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.srch__btn {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 50px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background: linear-gradient(180deg, rgba(0,217,131,1) 22%, rgba(0,178,76,1) 100%);;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid #37bc0b;
+  text-transform: uppercase;
+  transition: .2s linear;
+}
+
+.srch__btn:hover {
+  background: linear-gradient(90deg, rgba(0,217,131,1) 22%, rgba(0,178,76,1) 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.srch__btn:focus {
+  outline: none;
+}
+
+.weather {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.weather__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__city {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.weather__temp {
+  font-size: 35px;
+  color: #fff;
+}
+
+.weaher__header__divider {
+  font-size: 35px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.weather__content__title,
+.weather__content__value {
+  flex: 1;
+}
+
+.weather__table {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 16px;
+}
+
+.weather__table td {
+  padding-bottom: 7px;
+}
+
+.table__value {
+  padding-left: 15px;
+  text-align: left;
+}

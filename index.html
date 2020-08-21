@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <main>
+        <div class="main__wrapper">
+           <div class="main__content">
+                <form class="weather__form">
+                    <input type="text" placeholder="City">
+                    <button type="submit" class="srch__btn">Search</button>
+                </form>
+                <div class="weather">
+                    <div class="weather__header">
+                        <p class="weather__city"></p>
+                        <span class="weaher__header__divider">-</span>
+                        <p class="weather__temp"></p>
+                    </div>
+                    <div class="weather__icon">
+                        <img src="" alt="" class="weather__icon__img">
+                    </div>
+                    <table class="weather__table">
+                        <tr>
+                            <td class="text__right">Feels like</td>
+                            <td class="table__value" data-value="feelsLike"></td>
+                        </tr>
+                        <tr>
+                            <td class="text__right">Wind speed</td>
+                            <td class="table__value" data-value="windSpeed"></td>
+                        </tr>
+                    </table>
+                </div>
+           </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
