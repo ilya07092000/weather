@@ -8,7 +8,7 @@ let windSpeed = document.querySelector('[data-value = windSpeed]');
 form.addEventListener('submit', getValue);
 
 function getData(city) {
-    return fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d59739ada0e0469dc6d9950a88046db4`)
+    return fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=d59739ada0e0469dc6d9950a88046db4`)
     .then(response => {
         if(response.status >= 200 && response.status < 300) {
             return response.json()
