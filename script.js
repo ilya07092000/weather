@@ -4,6 +4,7 @@ let temp = document.querySelector('.weather__temp');
 let weatherImg = document.querySelector('.weather__icon__img');
 let feelsLike = document.querySelector('[data-value = feelsLike]');
 let windSpeed = document.querySelector('[data-value = windSpeed]');
+let description = document.querySelector('[data-value = descripton]');
 
 form.addEventListener('submit', getValue);
 
@@ -36,5 +37,6 @@ function setContent(data) {
     weatherImg.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     feelsLike.textContent = Number(data.main.feels_like - 273,15).toFixed(0) + '°C';
     windSpeed.textContent = data.wind.speed + 'm/s';
+    description.textContent = String(data.weather[0].description).toUpperCase();
 }
 
